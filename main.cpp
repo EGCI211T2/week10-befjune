@@ -1,9 +1,10 @@
 #include <iostream>
 #include <iomanip>
-#include "Time.h"
+
 
 using namespace std;
 
+#include "Time.h"
 
 void square(int&);
 
@@ -28,10 +29,10 @@ int main(){
     
     struct Time t1,t2,t3;
 
-    std::cout<<"What time was it?";
+    std::cout<<"What time was it?"<<endl;
     getTime(t1);
 
-    std::cout<<"What time is it now?";
+    std::cout<<"What time is it now?"<<endl;
     getTime(t2);
 
     t3=subtract(t2,t1); //t3=t2-t1
