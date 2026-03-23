@@ -27,8 +27,19 @@ int main(){
     cout<<"Colour: "<<setfill('x')<<setw(8)<<color<<endl;*/
 
     
-    struct Time t1,t2,t3;
-
+    Time t1,t2,t3;
+    cout<<"What time was it?"<<endl;
+    t1.get_time();
+    t1.display();
+    cout<<"What time is it?"<<endl;
+    t2.get_time();
+    t2.display();
+    //t1.set_time(18,20,70);
+    //t1.display();
+    //t2.set_time(6,8,20);
+    t3=t2.subtract(t1);
+    t3.display();
+    /*
     std::cout<<"What time was it?"<<endl;
     getTime(t1);
 
@@ -39,4 +50,17 @@ int main(){
 
     std::cout<<"Time diff is ";
     display(t3);
+
+    /*struct Time t1,t2,t3;
+
+    std::cout<<"What time was it?"<<endl;
+    getTime(t1);
+
+    std::cout<<"What time is it now?"<<endl;
+    getTime(t2);
+
+    t3=subtract(t2,t1); //t3=t2-t1
+
+    std::cout<<"Time diff is ";
+    display(t3);*/
 }
